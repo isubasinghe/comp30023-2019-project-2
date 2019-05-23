@@ -1,7 +1,7 @@
 #include "pwgen.h"
 
 void PW_GenCrack(int stop) {
-        
+    
 }
 
 

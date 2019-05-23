@@ -128,7 +128,11 @@ void DT_HashTable_Put(DT_HashTable *table, char *key, char *val) {
 
 void DT_FreeSlots(DT_HashTable *table) {
     for(int i=0; i < table->nslots; i++) {
-        if(table->slots[i].keys) {
+        if(table->slots[i].written > 0) {
+            for(int j=0; j < table->slots[i].written; j++) {
+                free(table->slots[i].keys[j]);
+                free(table->slots[i].vals[j]);
+            }
             free(table->slots[i].keys);
             free(table->slots[i].vals);
         }
@@ -136,6 +140,7 @@ void DT_FreeSlots(DT_HashTable *table) {
 }
 
 void DT_FreeHashTable(DT_HashTable *table) {
+    printf("FREEING HASHTABLE \n");
     DT_FreeSlots(table);
     free(table->slots);
     free(table);

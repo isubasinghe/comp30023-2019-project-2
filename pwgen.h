@@ -3,10 +3,11 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <strings.h>
+#include <string.h>
 
-// TAKE a 3 lettter word and add 123
-// Take a 4 letter word and add [0-99]
+#include "names.h"
+
+// take a 4 letter word and add [0-99]
 // take a 4 name and add [50-99]
 // take a 6 letter word and leetify
 
