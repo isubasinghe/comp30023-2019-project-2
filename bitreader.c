@@ -60,7 +60,6 @@ DT_HashTable *ReadBinaryFile(char *fname) {
         sprintf(countstr, "%d", hashes);
 
         DT_HashTable_Put(hashtable, hexstr, strdup(countstr));
-        printf("%s\n", hexstr);
         memset(buffer, 0, 32);
 
         hashes++;

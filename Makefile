@@ -2,7 +2,7 @@ CC	=	gcc
 
 CFLAGS	=	-O3 -Wall -Werror -pedantic -std=gnu99
 EXE = crack
-OBJ = main.o dt_hashtable.o pwcrack.o bitreader.o sha256.o
+OBJ = main.o dt_hashtable.o pwcrack.o bitreader.o sha256.o pwgen.o
 
 all: $(EXE)
 

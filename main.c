@@ -7,15 +7,14 @@
 #include "pwgen.h"
 #include "sha256.h"
 
-#include "names.h"
+
 
 int main(int argc, char *argv[]) {
-
     if(argc == 1) {
         
     }
     else if(argc == 2) {
-        
+        PW_GenCrack(atoi(argv[1]));
     }else if (argc == 3) {
         ReadLineCrack(argv[1], argv[2]);
     }else {
