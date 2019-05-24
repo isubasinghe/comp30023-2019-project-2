@@ -1,6 +1,6 @@
 CC	=	gcc
 
-CFLAGS	=	-O0 -g -Wall -Werror -pedantic -std=gnu99
+CFLAGS	=	-O2 -g -Wall -Werror -pedantic -std=gnu99
 EXE = crack
 OBJ = main.o dt_hashtable.o pwcrack.o bitreader.o sha256.o pwgen.o names.o words.o
 
