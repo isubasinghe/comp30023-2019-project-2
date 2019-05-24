@@ -22,6 +22,8 @@ sha256.o: sha256.h
 debug: $(OBJ)
 	$(CC) -o $(EXE) $(OBJ) $(CFLAGS)
 
+dh:
+	$(CC) dh.c -o dh
 	
 $(EXE): $(OBJ)
 		$(CC) -o $(EXE) $(OBJ) $(CFLAGS)
