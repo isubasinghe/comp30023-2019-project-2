@@ -5,6 +5,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+#define PASSWORD_LEN 12000
+
 #include "bitreader.h"
 #include "dt_hashtable.h"
 #include "sha256.h"

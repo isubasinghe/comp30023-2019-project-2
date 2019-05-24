@@ -15,17 +15,17 @@ void ReadLineCrack(char *passwords, char *hashfile) {
 
     // Passwords will be less than 2048 characters so this is more than enough
     // to store a single password in.
-    char buffer[2048];  
-    memset(buffer, 0, 2048);
+    char buffer[PASSWORD_LEN];  
+    memset(buffer, 0, PASSWORD_LEN);
 
     SHA256_CTX ctx;
     sha256_init(&ctx);
 
 
     while(1) {
-        memset(buffer, 0, 2048);
+        memset(buffer, 0, PASSWORD_LEN);
         sha256_init(&ctx);
-        char *read = fgets(buffer, 2048, fp);
+        char *read = fgets(buffer, PASSWORD_LEN, fp);
         if(read == NULL) {
             break;
         }
