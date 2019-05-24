@@ -36,7 +36,7 @@ DT_HashTable *ReadBinaryFile(char *fname) {
     unsigned char buffer[32];
     memset(buffer, 0, 32*sizeof(char));
 
-    int hashes = 0;
+    int hashes = 1;
 
     while(1) {
         int read = fread(buffer, 1, 32*sizeof(char), fp);
