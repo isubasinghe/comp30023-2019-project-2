@@ -1,6 +1,9 @@
 #ifndef NAMES_H
 #define NAMES_H
 
-extern const char *names[];
+#define NUM_NAMES 4945
+
+extern const char * const names[];
+
 
 #endif // NAMES_H

@@ -140,7 +140,6 @@ void DT_FreeSlots(DT_HashTable *table) {
 }
 
 void DT_FreeHashTable(DT_HashTable *table) {
-    printf("FREEING HASHTABLE \n");
     DT_FreeSlots(table);
     free(table->slots);
     free(table);
